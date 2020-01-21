@@ -207,7 +207,7 @@ namespace restapi.Controllers
                     var updatedLine = timecard.UpdatedLine(lineId, documentLine);
 
                     repository.Update(timecard);
-                    
+
                     return Ok(updatedLine);
                 }
                 else {
@@ -252,6 +252,12 @@ namespace restapi.Controllers
 
             Timecard timecard = repository.Find(id);
 
+            // verify that timecard person is consistent throughout the timecard's lifetime
+            if (timecard.Employee != submittal.Person) {
+
+                return StatusCode(409, new InvalidConsistentPersonError() { });
+            }
+            
             if (timecard != null)
             {
                 if (timecard.Status != TimecardStatus.Draft)

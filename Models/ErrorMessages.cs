@@ -20,4 +20,11 @@ namespace restapi.Models
 
         public string Message { get => "No state transition of requested type present in timecard"; }
     }
+
+    public class InvalidConsistentPersonError
+    {
+        public int ErrorCode { get => 104; }
+
+        public string Message { get => "The person should be consistent throughout the timecard's lifetime"; }
+    }
 }
