@@ -1,0 +1,13 @@
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/bin/Debug/netcoreapp2.1.1/appsettings.Development.json
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/bin/Debug/netcoreapp2.1.1/appsettings.json
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/bin/Debug/netcoreapp2.1.1/Properties/launchSettings.json
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/bin/Debug/netcoreapp2.1.1/restapi.deps.json
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/bin/Debug/netcoreapp2.1.1/restapi.runtimeconfig.json
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/bin/Debug/netcoreapp2.1.1/restapi.runtimeconfig.dev.json
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/bin/Debug/netcoreapp2.1.1/restapi.dll
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/bin/Debug/netcoreapp2.1.1/restapi.pdb
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/obj/Debug/netcoreapp2.1.1/restapi.csprojAssemblyReference.cache
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/obj/Debug/netcoreapp2.1.1/restapi.AssemblyInfoInputs.cache
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/obj/Debug/netcoreapp2.1.1/restapi.AssemblyInfo.cs
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/obj/Debug/netcoreapp2.1.1/restapi.dll
+/Users/helenawang/Documents/homework/seattleU/10_2020_Winter/assignments/1/restapi/obj/Debug/netcoreapp2.1.1/restapi.pdb
