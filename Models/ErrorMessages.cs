@@ -23,8 +23,15 @@ namespace restapi.Models
 
     public class InvalidConsistentPersonError
     {
-        public int ErrorCode { get => 104; }
+        public int ErrorCode { get => 103; }
 
         public string Message { get => "The person should be consistent throughout the timecard's lifetime"; }
+    }
+
+    public class InvalidApprovalPersonError
+    {
+        public int ErrorCode { get => 104; }
+
+        public string Message { get => "Approver cannot be the timecard person"; }
     }
 }

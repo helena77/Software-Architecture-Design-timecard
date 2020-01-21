@@ -257,7 +257,7 @@ namespace restapi.Controllers
 
                 return StatusCode(409, new InvalidConsistentPersonError() { });
             }
-            
+
             if (timecard != null)
             {
                 if (timecard.Status != TimecardStatus.Draft)
@@ -467,6 +467,12 @@ namespace restapi.Controllers
 
             Timecard timecard = repository.Find(id);
 
+            // check if the approver is the timecard person
+            if (timecard.Employee == approval.Approver) {
+
+                return StatusCode(409, new InvalidApprovalPersonError() { });
+            }
+            
             if (timecard != null)
             {
                 if (timecard.Status != TimecardStatus.Submitted)
