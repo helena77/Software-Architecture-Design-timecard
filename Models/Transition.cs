@@ -10,9 +10,13 @@ namespace restapi.Models
 
         public Transition(Event ev, TimecardStatus status)
         {
-            this.OccurredAt = DateTime.UtcNow;
-            this.TransitionedTo = status;
-            this.Event = ev;
+            // check the transition status
+            // it cannot back to the draft state
+            if (status != TimecardStatus.Draft) {
+                this.OccurredAt = DateTime.UtcNow;
+                this.TransitionedTo = status;
+                this.Event = ev;
+            }
         }
 
         public Transition(Event ev) : this(ev, TimecardStatus.Draft) { }
