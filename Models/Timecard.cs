@@ -177,6 +177,14 @@ namespace restapi.Models
             return annotatedLine;
         }
 
+        /* 
+         * delete the whole line
+         */
+        public bool DeleteLine(Guid lineId)
+        {
+            return Lines.Remove(Lines.SingleOrDefault(l => l.UniqueIdentifier == lineId));
+        }
+
         public bool CanBeDeleted()
         {
             return (Status == TimecardStatus.Cancelled || Status == TimecardStatus.Draft);
