@@ -24,6 +24,15 @@ namespace restapi.Controllers
                             Type = ContentTypes.Timesheets,
                             Relationship = DocumentRelationship.Timesheets,
                             Reference = "/timesheets"
+                        },
+
+                        // add support to create documentation
+                        new DocumentLink()
+                        {
+                            Method = Method.Post,
+                            Type = ContentTypes.Timesheets,
+                            Relationship = DocumentRelationship.CreateTimesheet,
+                            Reference = "/timesheets"
                         }
                     }
                 },
